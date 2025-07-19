@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Maaruf</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo"><a href="index.html">MyPortfolio</a></div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </div>
+  </nav>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="projects">
+        <div class="card">
+          <h3>School Management System</h3>
+          <p>A simple school management system built with PHP and MySQL.</p>
+        </div>
+        <div class="card">
+          <h3>Course Registration Platform</h3>
+          <p>An online course registration system using CodeIgniter framework.</p>
+        </div>
+        <div class="card">
+          <h3>Portfolio Website</h3>
+          <p>Personal portfolio site developed using HTML, CSS, and JavaScript.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
