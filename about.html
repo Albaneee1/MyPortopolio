@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - Maaruf</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo"><a href="index.html">MyPortfolio</a></div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <center><h2>About Me</h2></center>
+      <div class="about-content">
+        <img src="a1.png" alt="Profile Picture" class="profile-pic" />
+        <p class="bio">
+          I'm a creative developer with a strong foundation in HTML, CSS, JavaScript, and PHP. I specialize in building responsive websites and web applications using modern technologies.
+        </p>
+      </div>
+
+      <!-- Skills Section -->
+      <div class="skills">
+        <h3>My Skills</h3>
+        <ul>
+          <li>✅ HTML5 & CSS3</li>
+          <li>✅ JavaScript</li>
+          <li>✅ PHP & MySQL</li>
+          <li>✅ Responsive Web Design</li>
+          <li>✅ UI/UX Design</li>
+        </ul>
+      </div>
+
+      <!-- Resume Button -->
+      <div class="resume-download">
+        <a href="resume.pdf" download class="btn">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
